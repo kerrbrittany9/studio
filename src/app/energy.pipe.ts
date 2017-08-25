@@ -13,14 +13,14 @@ export class EnergyPipe implements PipeTransform {
     var output: Teacher[] = [];
     if(desiredEnergy === "pauseTeachers") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].pace <= 4) {
+        if (input[i].pace <= 2) {
           output.push(input[i]);
         }
       }
       return output;
     } else if (desiredEnergy === "energyTeachers") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].pace > 5) {
+        if (input[i].pace >= 3) {
           output.push(input[i]);
         }
       }
