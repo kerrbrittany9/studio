@@ -1,6 +1,6 @@
 <div>
   <h3>{{(teacherToDisplay | async).name}}</h3>
-  <img src="{{(teacherToDisplay | async).image}}" alt="Yoga Teacher">
+  <img id='photo' src="{{(teacherToDisplay | async).image}}" alt="Yoga Teacher">
   <h4>{{(teacherToDisplay | async).style}}</h4>
   <p>{{(teacherToDisplay | async).profile}}</p>
   <h5>Current Workshops: {{(teacherToDisplay | async).workshops}}</h5>
