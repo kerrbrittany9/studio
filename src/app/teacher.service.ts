@@ -22,4 +22,10 @@ export class TeacherService {
   getTeacherById(teacherId: string) {
     return this.database.object('teachers/' + teacherId);
   }
+  updateTeacher(localUpdatedTeacher){
+    var teacherEntryInFirebase = this.getTeacherById(localUpdatedTeacher.$key);
+      teacherEntryInFirebase.update({name: localUpdatedTeacher.name,
+                              style: localUpdatedTeacher.style,
+                              profile: localUpdatedTeacher.profile, workshops: localUpdatedTeacher.workshops, image: localUpdatedTeacher.image});
+  }
 }

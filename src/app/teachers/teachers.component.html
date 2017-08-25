@@ -1,12 +1,12 @@
 <h3>Meet the Teachers</h3>
 
-<div *ngFor="let teacher of teachers | async"  (click)="goToDetailPage(teacher)">
-  <h3><em>{{teacher.name}}</em> {{teacher.style}}</h3>
+<div *ngFor="let teacher of teachers | async">
+  <h3 (click)="goToDetailPage(teacher)"><em>{{teacher.name}}</em> {{teacher.style}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       <p>{{teacher.profile}}<p>
       <h4>Workshop: {{teacher.workshops}}</h4>
       <img src="{{teacher.image}}">"
       <hr>
-      <app-edit-teacher></app-edit-teacher>
+      <app-edit-teacher [selectedTeacher]="teacher"></app-edit-teacher>
     </div>
 </div>

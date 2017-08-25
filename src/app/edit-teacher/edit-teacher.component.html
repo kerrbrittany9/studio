@@ -1,3 +1,22 @@
-<p>
-  edit-teacher works!
-</p>
+<h4>Edit Yogi</h4>
+
+<label>Update Name:</label>
+<input [(ngModel)]="selectedTeacher.name">
+<br>
+
+<label>Update Yoga Style:</label>
+<input [(ngModel)]="selectedTeacher.style">
+<br>
+
+<label>Update Profile:</label>
+<input [(ngModel)]="selectedTeacher.profile">
+<br>
+
+<label>Update Workshop:</label>
+<input [(ngModel)]="selectedTeacher.workshops">
+<br>
+
+<label>Update Photograph:</label>
+<input [(ngModel)]="selectedTeacher.image">
+
+<button (click)="beginUpdatingTeacher(selectedTeacher)">Update</button>
