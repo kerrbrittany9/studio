@@ -8,8 +8,8 @@ export class TeacherService {
   teachers: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-  this.teachers = database.list('teachers');
-}
+    this.teachers = database.list('teachers');
+  }
 
   getTeachers() {
     return this.teachers;
@@ -19,12 +19,7 @@ export class TeacherService {
     this.teachers.push(newTeacher);
   }
 
-  getTeacherById(teacherId: number){
-  //  for (var i = 0; i <= TEACHERS.length - 1; i++) {
-  //    if (TEACHERS[i].id === teacherId) {
-  //      return TEACHERS[i];
-  //    }
-  //  }
- }
-
+  getTeacherById(teacherId: string) {
+    return this.database.object('teachers/' + teacherId);
+  }
 }

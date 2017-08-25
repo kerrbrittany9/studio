@@ -16,8 +16,9 @@ export class AdminComponent implements OnInit {
   }
 
   submitForm(name: string, style: string, profile: string, workshops: string, image: string) {
-  var newTeacher: Teacher = new Teacher(name, style, profile, workshops, image);
-  this.teacherService.addTeacher(newTeacher);
-}
+    const newTeacher: Teacher = new Teacher(name, style, profile, workshops, image);
+    this.teacherService.addTeacher(newTeacher);
+    console.log(Teacher);
+  }
 
 }

@@ -19,7 +19,7 @@ export class TeachersComponent implements OnInit {
     this.teachers = this.teacherService.getTeachers();
   }
 
-  goToDetailPage(clickedTeacher: Teacher) {
-    //  this.router.navigate(['teachers', clickedTeacher.id]);
+  goToDetailPage(clickedTeacher) {
+     this.router.navigate(['teachers', clickedTeacher.$key]);
    };
 }
