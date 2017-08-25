@@ -5,6 +5,8 @@ plan: yoga studio. home page will list all yoga teachers. click to see the yoga 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+By _Brittany Kerr_ [e-mail me](<mailto:kerrbrittany9@gmail.com>)
+
 ## Description
 
 ## Prerequisites
@@ -58,6 +60,9 @@ install the promise-polyfill package by using this command in your terminal:
 
 `$ install promise-polyfill --save-exact`
 
+## Technologies Used
+
+Angular 2 JavaScript, TypeScript, Node.js, Bootsrap, CSS, HTML
 
 ## Code scaffolding
 
