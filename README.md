@@ -1,6 +1,3 @@
-plan: yoga studio. home page will list all yoga teachers. click to see the yoga teacher detail: classes they teach, profile and any workshops. offered. filter on homepage by type of yoga, i.e. vinyasa, power, kimetic, etc. perhaps add image as part of object?
-
-
 # Studio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
@@ -8,6 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 By _Brittany Kerr_ [e-mail me](<mailto:kerrbrittany9@gmail.com>)
 
 ## Description
+
+This web app allows users to view yoga class descriptions and teachers who instruct at Root Whole Body. The user can filter the teacher list by class pace, pause or energy, and can click each teacher to see their full profile. The admin page allows users to add, update or delete a teacher. 
 
 ## Prerequisites
 
