@@ -12,7 +12,7 @@ import { TeacherService } from '../teacher.service';
 })
 export class TeacherProfileComponent implements OnInit {
   teacherId: number;
-  teacherToDisplay: Teacher;
+  teacherToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private teacherService: TeacherService) { }
 

@@ -10,7 +10,7 @@ import { Teacher } from '../teacher.model';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private teacherSErvice: TeacherService) { }
+  constructor(private teacherService: TeacherService) { }
 
   ngOnInit() {
   }

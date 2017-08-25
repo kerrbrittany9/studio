@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3>Add New Teacher to Root</h3>
+    <h3>Add New Yogi</h3>
   </div>
   <div class="panel-body">
     <div>
@@ -23,7 +23,7 @@
       </div>
 
       <div>
-        <label>New Workshop:</label>
+        <label>Workshop:</label>
         <br>
         <input #newWorkshops>
       </div>
@@ -33,7 +33,8 @@
         <br>
         <input #newPhotograph>
       </div>
-      <button (click)="submitForm(newName.value, newStyle.value, newProfile.value, newWorkshops.value, newImage.value); newName.value, newStyle.value=''; newProfile.value=''; newWorkshops.value=''; newImage.value=''">Namaste</button>
+      <br>
+      <button (click)="submitForm(newName.value, newStyle.value, newProfile.value, newWorkshops.value, newImage.value); newName.value=''; newStyle.value=''; newProfile.value=''; newWorkshops.value=''; newImage.value=''">Namaste</button>
     </div>
   </div>
 </div>

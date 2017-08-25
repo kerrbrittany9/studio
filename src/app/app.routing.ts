@@ -1,10 +1,10 @@
-import { ModuleWithProviders }  from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { AboutComponent }   from './about/about.component';
-import { TeachersComponent }   from './teachers/teachers.component';
+import { AboutComponent } from './about/about.component';
+import { TeachersComponent } from './teachers/teachers.component';
 import { TeacherProfileComponent } from './teacher-profile/teacher-profile.component';
-import { AdminComponent }   from './admin/admin.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 const appRoutes: Routes = [
