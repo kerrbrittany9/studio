@@ -8,13 +8,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { TeachersComponent } from './teachers/teachers.component';
+import { TeacherProfileComponent } from './teacher-profile/teacher-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    TeachersComponent
+    TeachersComponent,
+    TeacherProfileComponent
   ],
   imports: [
     BrowserModule,
