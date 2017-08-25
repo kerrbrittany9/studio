@@ -4,16 +4,17 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { TeachersComponent }   from './teachers/teachers.component';
 import { TeacherProfileComponent } from './teacher-profile/teacher-profile.component';
+import { AdminComponent }   from './admin/admin.component';
 
 
 const appRoutes: Routes = [
   {
-  path: '',
-  component: WelcomeComponent
+    path: '',
+    component: WelcomeComponent
   },
   {
-  path: 'about',
-  component: AboutComponent
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: 'teachers',
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
   {
     path: 'teachers/:id',
     component: TeacherProfileComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 

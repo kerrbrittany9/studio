@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Teacher } from '../teacher.model';
 import { Router } from '@angular/router';
 import { TeacherService } from '../teacher.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-teachers',
@@ -10,15 +11,15 @@ import { TeacherService } from '../teacher.service';
   providers: [TeacherService]
 })
 export class TeachersComponent implements OnInit {
-  teachers: Teacher[];
+  teachers: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private teacherService: TeacherService){}
 
   ngOnInit(){
-    this.teachers = this.teacherService.getTeachers(); 
+    this.teachers = this.teacherService.getTeachers();
   }
 
   goToDetailPage(clickedTeacher: Teacher) {
-     this.router.navigate(['teachers', clickedTeacher.id]);
+    //  this.router.navigate(['teachers', clickedTeacher.id]);
    };
 }
