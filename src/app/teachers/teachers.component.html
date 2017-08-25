@@ -6,7 +6,7 @@
   <option value="energyTeachers">Energy Teachers</option>
 </select>
 
-<div *ngFor="let teacher of teachers | async | style:filterbyStyle">
+<div *ngFor="let teacher of teachers | async | energy:filterByEnergy">
   <h3 (click)="goToDetailPage(teacher)"><em>{{teacher.name}}</em> {{teacher.style}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       <p>{{teacher.profile}}<p>

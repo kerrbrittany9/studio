@@ -14,7 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditTeacherComponent } from './edit-teacher/edit-teacher.component';
-import { StylePipe } from './style.pipe';
+import { EnergyPipe } from './energy.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +32,7 @@ export const firebaseConfig = {
     TeacherProfileComponent,
     AdminComponent,
     EditTeacherComponent,
-    StylePipe
+    EnergyPipe
   ],
   imports: [
     BrowserModule,
