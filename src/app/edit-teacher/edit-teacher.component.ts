@@ -19,4 +19,10 @@ export class EditTeacherComponent implements OnInit {
     this.teacherService.updateTeacher(teacherToUpdate);
   }
 
+  beginDeletingTeacher(teacherToDelete){
+    if(confirm("Are you sure you want to delete this teacher from the studio?")){
+      this.teacherService.deleteTeacher(teacherToDelete);
+    }
+  }
+
 }

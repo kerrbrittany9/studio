@@ -28,4 +28,9 @@ export class TeacherService {
                               style: localUpdatedTeacher.style,
                               profile: localUpdatedTeacher.profile, workshops: localUpdatedTeacher.workshops, image: localUpdatedTeacher.image});
   }
+
+  deleteTeacher(localTeacherToDelete){
+    var teacherEntryInFirebase = this.getTeacherById(localTeacherToDelete.$key);
+    teacherEntryInFirebase.remove();
+  }
 }
