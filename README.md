@@ -1,3 +1,6 @@
+plan: yoga studio. home page will list all yoga teachers. click to see the yoga teacher detail: classes they teach, profile and any workshops. offered. filter on homepage by type of yoga, i.e. vinyasa, power, kimetic, etc. perhaps add image as part of object?
+
+
 # Studio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
