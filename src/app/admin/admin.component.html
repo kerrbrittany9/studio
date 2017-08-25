@@ -33,8 +33,14 @@
         <br>
         <input #newImage>
       </div>
+
+      <div>
+        <label>Pause/Energy Class Pace [1-10]:</label>
+        <br>
+        <input #newPace>
+      </div>
       <br>
-      <button (click)="submitForm(newName.value, newStyle.value, newProfile.value, newWorkshops.value, newImage.value); newName.value=''; newStyle.value=''; newProfile.value=''; newWorkshops.value=''; newImage.value=''">Namaste</button>
+      <button (click)="submitForm(newName.value, newStyle.value, newProfile.value, newWorkshops.value, newImage.value, newPace.value); newName.value=''; newStyle.value=''; newProfile.value=''; newWorkshops.value=''; newImage.value=''; newPace.value=''">Namaste</button>
     </div>
   </div>
 </div>

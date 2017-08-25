@@ -26,7 +26,8 @@ export class TeacherService {
     var teacherEntryInFirebase = this.getTeacherById(localUpdatedTeacher.$key);
       teacherEntryInFirebase.update({name: localUpdatedTeacher.name,
                               style: localUpdatedTeacher.style,
-                              profile: localUpdatedTeacher.profile, workshops: localUpdatedTeacher.workshops, image: localUpdatedTeacher.image});
+                              profile: localUpdatedTeacher.profile, workshops: localUpdatedTeacher.workshops, image: localUpdatedTeacher.image,
+                            pace: localUpdatedTeacher.pace});
   }
 
   deleteTeacher(localTeacherToDelete){

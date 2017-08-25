@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class TeachersComponent implements OnInit {
   teachers: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByStyle: string = "allTeachers";
 
   constructor(private router: Router, private teacherService: TeacherService){}
 
@@ -22,5 +23,9 @@ export class TeachersComponent implements OnInit {
 
   goToDetailPage(clickedTeacher) {
      this.router.navigate(['teachers', clickedTeacher.$key]);
-   };
+   }
+   
+  onChange(optionFromMenu) {
+    this.filterByStyle = optionFromMenu;
+  }
 }

@@ -15,10 +15,10 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, style: string, profile: string, workshops: string, image: string) {
-    const newTeacher: Teacher = new Teacher(name, style, profile, workshops, image);
+  submitForm(name: string, style: string, profile: string, workshops: string, image: string, pace: number) {
+    const newTeacher: Teacher = new Teacher(name, style, profile, workshops, image, pace);
     this.teacherService.addTeacher(newTeacher);
-    console.log(Teacher);
+
   }
 
 }
