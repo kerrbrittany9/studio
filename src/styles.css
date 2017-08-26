@@ -17,5 +17,10 @@
 }
 
 #header {
-  background-color: red;
+  background-color:  #e6f3ff;
+}
+
+#logo {
+  width: 25px;
+  height:25px;
 }
