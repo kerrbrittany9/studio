@@ -5,6 +5,8 @@ import { AboutComponent } from './about/about.component';
 import { TeachersComponent } from './teachers/teachers.component';
 import { TeacherProfileComponent } from './teacher-profile/teacher-profile.component';
 import { AdminComponent } from './admin/admin.component';
+import { CalendarComponent } from './calendar/calendar.component';
+
 
 
 const appRoutes: Routes = [
@@ -27,6 +29,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'calendar',
+    component: CalendarComponent
   }
 ];
 

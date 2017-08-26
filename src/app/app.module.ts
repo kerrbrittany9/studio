@@ -15,6 +15,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditTeacherComponent } from './edit-teacher/edit-teacher.component';
 import { EnergyPipe } from './energy.pipe';
+import { CalendarComponent } from './calendar/calendar.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     TeacherProfileComponent,
     AdminComponent,
     EditTeacherComponent,
-    EnergyPipe
+    EnergyPipe,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
