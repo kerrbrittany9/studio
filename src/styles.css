@@ -2,3 +2,20 @@
   height: 325px;
   width: 220px;
 }
+
+#body {
+  background-color: #cceeff;
+}
+
+/*#selector {
+  color: #3399ff;
+
+}*/
+
+#inlay {
+  background-color: #e6f7ff;
+}
+
+#header {
+  background-color: red;
+}

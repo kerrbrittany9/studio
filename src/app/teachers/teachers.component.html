@@ -1,19 +1,23 @@
-<h3>Meet the Teachers</h3>
-
-<select (change)="onChange($event.target.value)">
-  <option value="allTeachers" selected="selected">All Teachers</option>
-  <option value="pauseTeachers">Pause Teachers</option>
-  <option value="energyTeachers">Energy Teachers</option>
-</select>
-
-<div *ngFor="let teacher of teachers | async | energy:filterByEnergy">
-  <h3 (click)="goToDetailPage(teacher)"><em>{{teacher.name}}</em> {{teacher.style}}</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <p>{{teacher.profile}}<p>
-      <h4>Workshop: {{teacher.workshops}}</h4>
-      <h4>Class Pace: {{teacher.pace}}</h4>
-      <img id='photo' src="{{teacher.image}}">
-      <hr>
-      <app-edit-teacher [selectedTeacher]="teacher"></app-edit-teacher>
-    </div>
+<div class="container" id="body">
+  <h3>Meet the Teachers</h3>
+  <br>
+  <select id="selector" (change)="onChange($event.target.value)">
+    <option value="allTeachers" selected="selected">All Teachers</option>
+    <option value="pauseTeachers">Pause Teachers</option>
+    <option value="energyTeachers">Energy Teachers</option>
+  </select>
+  <hr>
+  <div class="well" id="inlay">
+    <div *ngFor="let teacher of teachers | async | energy:filterByEnergy">
+      <h3 (click)="goToDetailPage(teacher)"><em>{{teacher.name}}</em> {{teacher.style}}</h3>
+        <div *ngIf="currentRoute === '/admin'">
+          <p>{{teacher.profile}}<p>
+          <h4>Workshop: {{teacher.workshops}}</h4>
+          <h4>Class Pace: {{teacher.pace}}</h4>
+          <img id='photo' src="{{teacher.image}}">
+          <hr>
+          <app-edit-teacher [selectedTeacher]="teacher"></app-edit-teacher>
+        </div>
+      </div>
+  </div>
 </div>
