@@ -6,7 +6,7 @@ By _Brittany Kerr_ [e-mail me](<mailto:kerrbrittany9@gmail.com>)
 
 ## Description
 
-This web app allows users to view yoga class descriptions and teachers who instruct at Root Whole Body. The user can filter the teacher list by class pace, pause or energy, and can click each teacher to see their full profile. The admin page allows users to add, update or delete a teacher. 
+This web app allows users to view yoga class descriptions and teachers who instruct at Root Whole Body. The user can filter the teacher list by class pace, pause or energy, and can click each teacher to see their full profile. The admin page allows users to add, update or delete a teacher.
 
 ## Prerequisites
 
@@ -26,10 +26,7 @@ You will need the following things properly installed on your computer:
   * `$ git clone <paste repository-url>`
   * `$ cd studio`
   * `$ npm install`
-  * `$ bower init`
-  * `$ bower install bootstrap --save`
-  * `$ atom .`
-* paste "../bower_components/bootstrap/dist/css/bootstrap.css" under "styles" in the angular-cli.json at the top level of project in atom.
+  * `$ bower install`
 
 ## Firebase
 
@@ -37,7 +34,7 @@ You will need to create an account with [Firebase](https://firebase.google.com/)
 
 You'll then be taken to an "Overview" area. Where you'll be offered three options. Select `Add Firebase to your web app`
 Make a file: src/app/api-keys.ts, which will hold the Firebase credentials. Replace the xxx with your credentials.
-
+````
 export var masterFirebaseConfig = {
     apiKey: "xxxx",
     authDomain: "xxxx.firebaseapp.com",
@@ -45,7 +42,7 @@ export var masterFirebaseConfig = {
     storageBucket: "xxxx.appspot.com",
     messagingSenderId: "xxxx"
   };
-
+```
 
 ## Development server
 
