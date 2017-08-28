@@ -18,6 +18,7 @@ export class EditTeacherComponent implements OnInit {
 
   beginUpdatingTeacher(teacherToUpdate){
     this.teacherService.updateTeacher(teacherToUpdate);
+    this.edit=false;
   }
 
   beginDeletingTeacher(teacherToDelete){
@@ -29,9 +30,5 @@ export class EditTeacherComponent implements OnInit {
   showEditForm() {
     this.edit = true;
   }
-
-  hideEditForm() {
-    this.edit = false;
-  } 
 
 }

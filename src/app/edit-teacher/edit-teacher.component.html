@@ -1,29 +1,29 @@
-<h4>Edit Yogi</h4>
+<h4 (click)="showEditForm()">Edit Yogi</h4>
+<div *ngIf="edit===true">
 
-<label>Update Name:</label>
-<input [(ngModel)]="selectedTeacher.name">
-<br>
+  <label>Update Name:</label>
+  <input [(ngModel)]="selectedTeacher.name">
+  <br>
 
-<label>Update Yoga Style:</label>
-<input [(ngModel)]="selectedTeacher.style">
-<br>
+  <label>Update Yoga Style:</label>
+  <input [(ngModel)]="selectedTeacher.style">
+  <br>
 
-<label>Update Profile:</label>
-<textarea [(ngModel)]="selectedTeacher.profile"></textarea>
-<br>
+  <label>Update Profile:</label>
+  <textarea [(ngModel)]="selectedTeacher.profile"></textarea>
+  <br>
 
-<label>Update Workshop:</label>
-<input [(ngModel)]="selectedTeacher.workshops">
-<br>
+  <label>Update Workshop:</label>
+  <input [(ngModel)]="selectedTeacher.workshops">
+  <br>
 
-<label>Update Photograph:</label>
-<input [(ngModel)]="selectedTeacher.image">
-<br>
+  <label>Update Photograph:</label>
+  <input [(ngModel)]="selectedTeacher.image">
+  <br>
 
-<label>Update Pace:</label>
-<input [(ngModel)]="selectedTeacher.pace">
-
-
+  <label>Update Pace:</label>
+  <input [(ngModel)]="selectedTeacher.pace">
 <button (click)="beginUpdatingTeacher(selectedTeacher)">Update</button>
 <hr>
 <button (click)="beginDeletingTeacher(selectedTeacher)">Delete</button>
+</div>
