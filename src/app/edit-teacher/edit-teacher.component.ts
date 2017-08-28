@@ -9,6 +9,7 @@ import { TeacherService } from '../teacher.service';
 })
 export class EditTeacherComponent implements OnInit {
   @Input() selectedTeacher;
+  edit = false;
 
   constructor(private teacherService: TeacherService) { }
 
@@ -24,5 +25,13 @@ export class EditTeacherComponent implements OnInit {
       this.teacherService.deleteTeacher(teacherToDelete);
     }
   }
+
+  showEditForm() {
+    this.edit = true;
+  }
+
+  hideEditForm() {
+    this.edit = false;
+  } 
 
 }

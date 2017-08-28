@@ -9,7 +9,7 @@ import { Teacher } from '../teacher.model';
   providers: [TeacherService]
 })
 export class AdminComponent implements OnInit {
-
+  add = false;
   constructor(private teacherService: TeacherService) { }
 
   ngOnInit() {
@@ -18,7 +18,13 @@ export class AdminComponent implements OnInit {
   submitForm(name: string, style: string, profile: string, workshops: string, image: string, pace: number) {
     const newTeacher: Teacher = new Teacher(name, style, profile, workshops, image, pace);
     this.teacherService.addTeacher(newTeacher);
+    this.add = false;
 
   }
+
+  showAddForm() {
+    this.add =true;
+  }
+
 
 }
