@@ -8,6 +8,24 @@ By _Brittany Kerr_ [e-mail me](<mailto:kerrbrittany9@gmail.com>)
 
 This web app allows users to view yoga class descriptions and teachers who instruct at Root Whole Body. The user can filter the teacher list by class pace, pause or energy, and can click each teacher to see their full profile. The admin page allows users to add, update or delete a teacher.
 
+## Studio Program Preview
+![Home Page Preview](src/images/classes.png)
+_Home Page Introduces the Classes and the Class Concepts_
+
+![Calendar](src/images/calendar.png)
+_Users can use nav-bar to maneuver to class calendar._
+
+![Meet the Teachers](src/images/teacherDetail.png)
+_Users can view teacher profiles highlighting their experience and workshops._
+
+![Admin](src/images/input.png)
+_Administrative users can add a teacher to the list with yoga style and yoga class pace outlined._
+
+![Filter](src/images/filter.png)
+_Admin users can filter power and pause teachers to find quick teacher substitutions._
+
+
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer:
@@ -42,7 +60,7 @@ export var masterFirebaseConfig = {
     storageBucket: "xxxx.appspot.com",
     messagingSenderId: "xxxx"
   };
-```
+````
 
 ## Development server
 
